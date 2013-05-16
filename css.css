@@ -1,0 +1,61 @@
+.innerRange {
+    width: 256px;
+    float: left;
+}
+
+.ui-slider {
+    height: 5px!important;
+    border: 0!important;
+    background: white!important;
+}
+
+.ui-slider-handle {
+    height: 8px!important;
+    width: 9px!important;
+    border: 0!important;
+    background-image: url(img/knob.png)!important;
+    margin-left: -4.5px!important;
+    outline: none;
+    border-radius: 0;
+}
+
+.rangeValue {
+    width: 20px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.rangeName {
+    float: left;
+    margin-right: 10px;
+    font-size: 10px;
+    padding-top: 3px;
+}
+
+.block {
+    height: 25px;
+}
+
+.blocks {
+    float: left;
+    width: 310px;
+    height: 75px;
+}
+
+.colorPreview {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 11.5px;
+    margin-left: 10px;
+    border: 1px #000 solid;
+}
+
+.paletteBlock {
+    clear: both;
+    padding-left: 45px;
+}
+
+.palette {
+    cursor: crosshair;
+}
