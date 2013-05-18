@@ -381,20 +381,3 @@ var colorPickerOjb = {
         this.colorPicker.funcChange = onChange;
     }
 }
-
-
-
-
-
-$(document).ready(function() {
-    //newPicker = JSON.stringify(colorPickerOjb);
-    //newPicker = JSON.parse(newPicker);
-    
-    newPicker = colorPickerOjb;
-    newPicker.create('cl', 2, 128, 128, 128, function() {
-        console.log( newPicker.getHEX() );
-    });
-    
-    //newPicker2 = clone(colorPickerOjb);
-    //newPicker2.create('cl2', 2);
-})
