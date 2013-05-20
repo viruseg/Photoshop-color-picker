@@ -79,6 +79,10 @@ var colorPickerOjb = {
         this.colorPicker.tab1 = $('#'+id+'tab1');
         this.colorPicker.tab2 = $('#'+id+'tab2');
         
+        this.colorPicker.lineR.fillStyle = "#FFFFFF";
+        this.colorPicker.lineG.fillStyle = "#FFFFFF";
+        this.colorPicker.lineB.fillStyle = "#FFFFFF";
+        
         var tmpstr = '';
         for (var i=0, j=this.colorPicker.color.length; i<j; i++) {
             tmpstr += '<div class="CLPcompleteColorButton" num="'+i+'" style="background-color: rgb('+this.colorPicker.color[i][0]+','+this.colorPicker.color[i][1]+','+this.colorPicker.color[i][2]+')"></div>';
@@ -270,31 +274,34 @@ var colorPickerOjb = {
     },
     
     drawrCanvasR: function() {
-        for (var i=0; i<256; i++) {
+        this.colorPicker.lineR.clearRect(0, 0, 256, 7);
+        for (var i=0; i<=256; i++) {
             this.colorPicker.lineR.beginPath();
             this.colorPicker.lineR.strokeStyle = this.colorHex(i, this.colorPicker.g, this.colorPicker.b);
             this.colorPicker.lineR.moveTo(i,0);
-            this.colorPicker.lineR.lineTo(i,6);
+            this.colorPicker.lineR.lineTo(i,7);
             this.colorPicker.lineR.stroke();
         }
     },
     
     drawrCanvasG: function() {
-        for (var i=0; i<256; i++) {
+        this.colorPicker.lineG.clearRect(0, 0, 256, 7);
+        for (var i=0; i<=256; i++) {
             this.colorPicker.lineG.beginPath();
             this.colorPicker.lineG.strokeStyle = this.colorHex(this.colorPicker.r, i, this.colorPicker.b);
             this.colorPicker.lineG.moveTo(i,0);
-            this.colorPicker.lineG.lineTo(i,6);
+            this.colorPicker.lineG.lineTo(i,7);
             this.colorPicker.lineG.stroke();
         }
     },
     
     drawrCanvasB: function() {
-        for (var i=0; i<256; i++) {
+        this.colorPicker.lineB.clearRect(0, 0, 256, 7);
+        for (var i=0; i<=256; i++) {
             this.colorPicker.lineB.beginPath();
             this.colorPicker.lineB.strokeStyle = this.colorHex(this.colorPicker.r, this.colorPicker.g, i);
             this.colorPicker.lineB.moveTo(i,0);
-            this.colorPicker.lineB.lineTo(i,6);
+            this.colorPicker.lineB.lineTo(i,7);
             this.colorPicker.lineB.stroke();
         }
     },
