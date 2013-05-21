@@ -2,7 +2,7 @@
     position: relative;
 }
 .allPckrObj .ui-slider-horizontal .ui-slider-handle {
-    top: -.3em;
+    top: .5em;
 }
 
 .allPckrObj .ui-slider .ui-slider-handle {
@@ -34,7 +34,8 @@
 .allPckrObj .CLPblock .ui-slider {
     height: 5px;
     border: 0;
-    background: white;
+    height: 18px;
+    margin-top: -13px;
 }
 
 .allPckrObj .CLPblock .ui-slider-handle {
