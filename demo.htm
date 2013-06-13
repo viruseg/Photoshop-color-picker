@@ -13,15 +13,22 @@
 <body>
 <script type="text/javascript">
 <!--
+var newPicker;
+var newPicker2;
+
 	$(document).ready(function() {
     
-    newPicker = colorPickerOjb;
-    newPicker.create('cl', 2, 128, 128, 128, function() {
+    newPicker = new createColorPickerOjb('cl', 2, 128, 128, 128, function() {
         console.log( newPicker.getHEX() );
+    });
+    
+    newPicker2 = new createColorPickerOjb('cl2', 1, 8, 128, 128, function() {
+        console.log( newPicker2.getHEX() );
     });
 })
 -->
 </script>
     <div id="cl"></div>
+    <div id="cl2"></div>
 </body>
 </html>
