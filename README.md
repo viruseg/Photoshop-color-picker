@@ -5,7 +5,7 @@ Photoshop-color-picker
 ## Требования:
 
 * Браузер с поддержкой canvas.
-* Подключить colorPicker.js и colorPicker.css.
+* Подключить `colorPicker.js` и `colorPicker.css`.
 * Подключить jQuery (тестировалось на 2.0.0, но вероятно заработает и на младших версиях).
 * Подключить jQuery UI разделы core, widget, mouse, slider (тестировалось на 1.9.2).
 
